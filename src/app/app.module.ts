@@ -1,3 +1,9 @@
+import { pagina3Page } from './../pages/pagina3/pagina3';
+import { TabsPage } from './../pages/tabs/tabs';
+import { ModalPage } from './../pages/modal/modal';
+import { PrincipalPage } from './../pages/principal/principal';
+import { Ajustes2Page } from './../pages/ajustes2/ajustes2';
+import { AjustesPage } from './../pages/ajustes/ajustes';
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
@@ -6,10 +12,18 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
+import { Principal2Page } from '../pages/principal2/principal2';
 
 @NgModule({
   declarations: [
     MyApp,
+    PrincipalPage,
+    Principal2Page,
+    pagina3Page,
+    AjustesPage,
+    Ajustes2Page,
+    ModalPage,
+    TabsPage,
     HomePage
   ],
   imports: [
@@ -19,6 +33,13 @@ import { HomePage } from '../pages/home/home';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
+    PrincipalPage,
+    Principal2Page,
+    pagina3Page,
+    AjustesPage,
+    Ajustes2Page,
+    ModalPage,
+    TabsPage,
     HomePage
   ],
   providers: [
