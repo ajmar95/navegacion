@@ -1,9 +1,28 @@
 <ion-header>
     <ion-navbar>
       <ion-title>
-        pagina 3
+        {{pais.pais}}
       </ion-title>
     </ion-navbar>
   </ion-header>
   <ion-content padding>
+    <h3 text-center>{{pais.capital}} </h3> 
+    <button ion-button 
+    block
+    color="primary"
+    (click)="iratras()">
+      ir atras con evento
+    </button>
+    <button ion-button 
+    block
+    color="primary"
+    (click)="irroot()">
+      ir a la principal
+    </button>
+    <button ion-button 
+    block
+    color="danger"
+    navPop>
+      ir atras por html
+    </button>
   </ion-content>

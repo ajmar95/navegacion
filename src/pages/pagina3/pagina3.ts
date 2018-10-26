@@ -1,3 +1,4 @@
+import { NavParams, NavController } from 'ionic-angular';
 import { Component } from '@angular/core';
 
 @Component({
@@ -5,6 +6,16 @@ import { Component } from '@angular/core';
   templateUrl: 'pagina3.html'
 })
 export class pagina3Page {
-  constructor() {
+  pais:any={};
+  constructor(private NavParams:NavParams,
+    private NavCtrl:NavController ) {
+    console.log(this.NavParams);
+    this.pais=this.NavParams.get("pais");
   }
+  iratras(){
+this.NavCtrl.pop();
+  }
+  irroot(){
+    this.NavCtrl.pop();
+      }
 }

@@ -1,3 +1,4 @@
+import { pagina3Page } from './../pagina3/pagina3';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
@@ -14,12 +15,17 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'principal2.html',
 })
 export class Principal2Page {
+  paises:any[]=[{pais:"Francia",capital:"Paris"},
+  {pais:"Japon",capital:"Tokio"},
+  {pais:"Madagascar",capital:"Antananarivo"}]
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad Principal2Page');
-  }
+ 
+irPagina3(p:any){
+  console.log(p);
+  this.navCtrl.push(pagina3Page,{"pais":p})
+}
 
 }

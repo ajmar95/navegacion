@@ -11,7 +11,6 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
-import { HomePage } from '../pages/home/home';
 import { Principal2Page } from '../pages/principal2/principal2';
 
 @NgModule({
@@ -23,8 +22,7 @@ import { Principal2Page } from '../pages/principal2/principal2';
     AjustesPage,
     Ajustes2Page,
     ModalPage,
-    TabsPage,
-    HomePage
+    TabsPage
   ],
   imports: [
     BrowserModule,
@@ -39,8 +37,7 @@ import { Principal2Page } from '../pages/principal2/principal2';
     AjustesPage,
     Ajustes2Page,
     ModalPage,
-    TabsPage,
-    HomePage
+    TabsPage
   ],
   providers: [
     StatusBar,
