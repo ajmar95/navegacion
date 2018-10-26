@@ -16,6 +16,6 @@ export class pagina3Page {
 this.NavCtrl.pop();
   }
   irroot(){
-    this.NavCtrl.pop();
+    this.NavCtrl.popToRoot();
       }
 }
